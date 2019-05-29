@@ -1,0 +1,79 @@
+<!-- Css Practise Selectors -->
+
+<html>
+<head>
+    <style>
+        .contactUs { /*<!-- This is a Class Selector -->*/
+            padding: 50px;
+        }
+
+        .inputCls {
+            margin: 0 .25rem;
+            min-width: 233px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            transition: border-color .5s ease-out;
+        }
+
+            .inputCls::after, .contactUs textarea::after { /*<!-- Here:: after is pseudo selector -->*/
+                content: " *";
+                /*color: royalblue;*/
+                font-weight: bold;
+                /*border-color: 2BA443;*/
+            }
+
+            .contactUs textarea, .inputCls:required {
+                border-color: 2BA443;
+                /*border:solid;*/
+            }
+
+            .contactUs textarea, .inputCls:invalid {
+                border-color: gray;
+            }
+
+        .transparenthr {
+            border-color: blue;
+        }
+
+        .lbl {
+            font-family: 'Calibri';
+        }
+
+        #remarks { /*<!-- This is Id selector and unique -->*/
+            text-align: top;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="contactUs">
+        <hr />
+        <h1>Contact Us</h1>
+        <hr class="transparenthr" />
+        <table>
+            <tr>
+                <td class="lbl"><strong>Name: </strong></td>
+                <td><input class="inputCls" type="text" name="name" required placeholder="Full Name"></td>
+            </tr>
+            <tr>
+                <td class="lbl"><strong>Email: </strong></td>
+                <td><input class="inputCls" type="email" name="email" required placeholder="Enter a valid email address"></td>
+            </tr>
+            <tr>
+                <td class="lbl"><strong>Website: </strong></td>
+                <td><input class="inputCls" type="url" name="url" required placeholder="http://example.com"></td>
+            </tr>
+            <tr>
+                <td id="remarks"><strong><p>Message: </p></strong></td>
+                <td><textarea class="inputCls" rows="4" name="remarks" required></textarea></td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Submit Form"></td>
+            </tr>
+        </table>
+        <hr class="transparenthr" />
+    </form>
+</body>
+</html>

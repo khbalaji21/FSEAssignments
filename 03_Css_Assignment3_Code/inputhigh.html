@@ -1,0 +1,59 @@
+<!-- Css Practise -->
+
+<html>
+	<head>
+		<style>
+			
+			.simple-form {
+			  display: flex;
+			  overflow-y: scroll;
+			  padding-bottom: 1.25rem;
+			}
+			.simple-form input {
+			  margin: 0 .25rem;
+			  min-width: 125px;
+			  border: 1px solid #eee;
+			  border-left: 3px solid;
+			  border-radius: 5px;
+			  transition: border-color .5s ease-out;
+			}
+			.simple-form input:required {
+			  border-left-color: gray;
+			}
+			.simple-form input:invalid {
+			  border-left-color: salmon;
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+		<form class="simple-form">
+			<hr />
+			<h1>Contact Us</h1>
+			<hr class="transparenthr"/>
+			<table>
+				<tr>
+					<td class="lbl"><strong>Name: </strong></td>
+					<td><input class="" type="text" name="name" required></td>
+				</tr>
+				<tr>
+					<td class="lbl"><strong>Email: </strong></td>
+					<td><input type="email" name="email" required placeholder="Enter a valid email address"></td>
+				</tr>
+				<tr>
+					<td class="lbl"><strong>Website: </strong></td>
+					<td><input type="url" required"></td>
+				</tr>
+				<tr>
+					<td class="lbl"><strong>Remarks: </strong></td>
+					<td><input type="text" required></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" value="Submit Form" required></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
