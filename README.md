@@ -1,3 +1,6 @@
+# DOT_FULL_PLAN.xlsx
+FSE Plan
+
 # FSEAssignments
 FSE 2018-19 Assignments
 
@@ -5,3 +8,6 @@ The ng-modules in the Angular projects are not uploaded since they are of large 
 
 # Practise 
 This Folder includes HTML, CSS, JS, JQuery practise files
+
+# FSE_MICRO.zip
+Fast track FSE Assignments, Incomplete but backing up
