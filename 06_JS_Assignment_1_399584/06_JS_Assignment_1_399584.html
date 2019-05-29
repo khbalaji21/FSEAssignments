@@ -1,0 +1,338 @@
+<html>
+<head>
+    <title>06_JS_Assignment_1_399584</title>	
+	<script>
+		
+	</script>
+</head>
+<body>
+	<h1>06_JS_Assignment_1_399584</h1>
+	<p>1. Write a JavaScript program to display the current day and time in the following format.
+          Sample Output: Today is: Friday. Current time is: 4 PM : 50 : 22</p>
+	<label id="lblDtTime">test</label>
+	</br>
+	</br>
+	<p>2. Write a JavaScript program to print the contents of the current window.</p>	
+	<button id="prntBtn" onclick="printItemsonPg()">Print</button>
+	</br>
+	</br>
+	<p>3. Write a JavaScript program to get the current date. Expected Output: mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy</p></br>
+	Output:<label id="lbldatefmt"></label>
+	</br>
+	</br>
+	<p>4. Write a JavaScript program where the program takes a random integer between 1 to 10, the user is then prompted to input a guess number. If the user input matches with guess number, the program will display a message "Good Work" otherwise display a message "Not matched".</p>
+	<button id="rdmBtn" onclick="randVal()">Random No</button>
+	</br>
+	<p id='rdmP'>4 message here</p>
+	</br>
+	<p>5. Write a JavaScript program to calculate multiplication and division of two numbers (input from user). Sample form:</p>
+	<table>
+		<tr>
+			<td>1st Number:</td>
+			<td><input type="text" id="firstNum"></input></td>			
+		</tr>
+		<tr>
+			<td>2nd Number:</td>
+			<td><input type="text" id="secNum"></input></td>
+		</tr>				
+	</table>	
+	</br>	
+	</br>	
+	<table>
+		<tr>
+			<td><button id="mulBtn" onclick="mul()">Multiply</button></td>
+			<td><button id="divBtn" onclick="divide()">Divide</button></td>
+		</tr>
+	</table>
+	</br>
+	<label id="muldivResult">5 Answer here</label>
+	</br>
+	</br>
+	<p>6. Write a JavaScript program to get the website URL (loading page) & print on console</p>
+	<label id="lblUrl">Enter input to check output</label>	
+	</br>
+	</br>
+	<p>7. Write a JavaScript program to capitalize the first letter of each word of a given string</p>
+	Enter Text: <input id="txtUIp" onblur="capitalize()"></input>
+	</br>
+	<label id="lblCap">Enter input to check output</label>
+	</br>
+	</br>
+	<p>8. Write a JavaScript program to check if a given string contains equal number of p's and s's present. For eg. //paatpss is true & paatps is false</br>
+	</br>	
+	&emsp;Input string: <input id="q8" type="text" onblur="checkcommons()" /></br> 	
+	&emsp;Output: <span id="q8a">Enter input to check output</span>
+	</br>
+	<p>9. Write a JavaScript program to create a new string of 4 copies of the last 3 characters of a given original string. The length of the given string must be 3 and above</br>
+	</br>	
+	&emsp;Input string: <input id="q9" type="text" onblur="dup()" /></br> 	
+	&emsp;Output: <span id="q9a">Enter input to check output</span>
+	</br>	
+	<p>10. Write a JavaScript program to swap the first and last elements of a given array of integers. The array length should be at least 1</br>
+	</br>	
+	&emsp;Input string: <input id="q10" type="text" onblur="arrSwap()" /></br> 	
+	&emsp;Output: <span id="q10a">Enter input to check output</span>
+	</br>
+	<p>11. Write a JavaScript function that reverse a number. Using built in functions: Example x = 32243; Expected Output: 34223</br>
+	</br>	
+	&emsp;Input string: <input id="q11" type="text" onblur="revFunc()" /></br> 	
+	&emsp;Output: <span id="q11a">Enter input to check output</span>
+	</br>
+	<p>12. Write a JavaScript function that returns a passed string with letters in alphabetical order. Using built in functions. Example string: 'webmaster' Expected Output: 'abeemrstw'</p>	
+	&emsp;Input string: <input id="q12" type="text" onblur="sortFunc()" /></br> 	
+	&emsp;Output: <span id="q12a">Enter input to check output</span>
+	</br>
+	<p>13. Write a JavaScript function that accepts a string as a parameter and find the longest word within the string. Using builtin functions</p>
+	&emsp;Input string: <input id="q13" type="text" onblur="longWord()" /></br> 	
+	&emsp;Output: <span id="q13a">Enter input to check output</span>
+	</br>
+	<p>14. Write a JavaScript function to extract unique characters from a string. Example string: "thequickbrownfoxjumpsoverthelazydog" Expected Output: "thequickbrownfxjmpsvlazydg"</p>
+	&emsp;Input string: <input id="q14" type="text" onblur="unique()" /></br> 	
+	&emsp;Output: <span id="q14a">Enter input to check output</span>
+	</br>	
+	<p>15. Write a JavaScript function to get the number of occurrences of each letter in specified string. Sample input:Balaji; Sample Output: "B":1, "a":2, "l":1, "j":1, "i":1 </p>
+	&emsp;Input string: <input id="q15" type="text" onblur="occurrences()" /></br> 	
+	&emsp;Output: <span id="q15a">Enter input to check output</span>
+	<p>16. Write a JavaScript function that generates a string id (specified length) of random characters</p>
+	&emsp;Input length: <input id="q16" type="text" onblur="randomChar()" /></br> 	
+	&emsp;Output: <span id="q16a">Check the random text here!!</span>
+	</br>
+	<p>17. Write a JavaScript function to find longest substring in a given a string without repeating characters.</p>
+	&emsp;Input length: <input id="q17" type="text" onblur="subUnrepeat()" /></br> 	
+	&emsp;Output: <span id="q17a">Check the longest substring text here!!</span>
+	</br>
+	</br>
+	<form id="q18" onsubmit="getFormvalue()">
+		<span>18. Write a JavaScript function to get the values of First and Last name of the following form. Sample HTML file</span></br>
+		&emsp;First name: <input type="text" name="fname" value="Balaji"></br>
+		&emsp;Last name: <input type="text" name="lname" value="Singh"></br>
+		&emsp;Output: <span id="q18a">Check the random form values here!!</span>
+		<input type="submit" value="Submit">
+	</form>
+	<span>19. Here is a sample html file with a submit button. Write a JavaScript function to get the value of the href, hreflang, rel, target, and type attributes of the specified link</span>
+	&emsp;&emsp;<p><a id="q19" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://www.iiht.com/">IIHT</a></p>
+	&emsp;<button onclick="getAttributes()">Click here to get attributes value</button>
+	</br>
+	</br>
+	<span>20. Write a JavaScript function that accept row, column, (to identify a particular cell) and a string to update the content of that cell. Sample HTML file</span>
+	&emsp;<table id="myTableq20" border="1">
+		<tr>
+			<td>Row1 cell1</td>
+			<td>Row1 cell2</td>
+		</tr>
+		<tr>
+			<td>Row2 cell1</td>
+			<td>Row2 cell2</td>
+		</tr>
+		<tr>
+			<td>Row3 cell1</td>
+			<td>Row3 cell2</td>
+		</tr>
+	</table>
+	<form>
+		&emsp;<input type="button" onclick="changeContent()" value="Change content">
+	</form>
+	</br>
+	<span>21. Write a JavaScript program to remove items from a dropdown list. Sample HTML file</span></br>
+	<select id="colorSelectQ21">
+		<option>Red</option>
+		<option>Green</option>
+		<option>White</option>
+		<option>Black</option>
+	</select></br>
+	<input type="button" onclick="removecolor()" value="Select and Remove">
+
+    <script type="text/javascript">	
+		var today = new Date();
+		var hour = (today.getHours() < 12) ? today.getHours() : today.getHours() - 12;
+		var ampm = ((today.getHours() < 12) ? "AM" : "PM")
+		var weekday = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
+		console.log("Today is: " + weekday[today.getDay()] + ". " + hour + " " + ampm + " : " + today.getMinutes() + " : " + today.getSeconds());
+		
+		document.getElementById('lblDtTime').innerHTML = "Today is: " + weekday[today.getDay()] + ". Current time is: " + hour + " " + ampm + " : " + today.getMinutes() + " : " + today.getSeconds();	
+		
+		var printer = document.getElementById("prntBtn");
+		function printItemsonPg(){			
+			window.print();
+		}
+		printer.addEventListener("click", printItemsonPg);		
+		
+		var day = today.getDay();
+		var month = today.getMonth() + 1;
+		var year = today.getFullYear();		
+		document.getElementById('lbldatefmt').innerHTML = month + "-" + day + "-" + year + ", " + month + "/" + day + "/" + year + " or " + day + "-" + month + "-" + year + ", " + day + "/" + month + "/" + year
+				
+		function randVal() {
+			var min = 1;
+			var max = 10;
+			var userinput = prompt("Please enter a random number between 1 and 10")
+			var randomNo = Math.round(Math.random() * (min - max) + min);
+			var restxt;
+			if (userinput === randomNo) {
+				restxt = "Good Work"
+			} else {
+				restxt = "Not Matched. Try Again!"
+			}
+			document.getElementById('rdmP').innerHTML =	restxt;
+		}
+
+		function mul() {
+			var firstNumMul = document.getElementById('firstNum').value;
+			var secNumMul	= document.getElementById('secNum').value;
+			
+			document.getElementById('muldivResult').innerHTML = firstNumMul*secNumMul;
+		}
+		function divide() {
+			var firstNumMul = document.getElementById('firstNum').value;
+			var secNumMul	= document.getElementById('secNum').value;
+			
+			document.getElementById('muldivResult').innerHTML = firstNumMul/secNumMul;
+		}
+				
+		var url = window.location.href;
+		document.getElementById('lblUrl').innerHTML = url
+		console.log(url);
+		
+		function capitalize(){
+			var strIp = document.getElementById('txtUIp').value;
+			var valres = strIp.charAt(0).toUpperCase() + strIp.slice(1).toLowerCase()
+			document.getElementById('lblCap').innerHTML = valres	
+		}
+		
+		function checkcommons(){
+			var str = document.getElementById("q8").value;
+			var p = str.replace(/[^p]/g, "");
+			var s = str.replace(/[^s]/g, "");
+
+			var noOfps = p.length;
+			var noOfss = s.length;
+
+			if(noOfps === noOfss){
+			document.getElementById("q8a").innerHTML = "true";
+			} else {
+			document.getElementById("q8a").innerHTML = "false";
+			}			
+		}
+		
+		function dup() {
+			var str = document.getElementById("q9").value;
+			if (str.length >= 3){	
+				var lastThree = str.substring(str.length-3);
+				document.getElementById("q9a").innerHTML = lastThree.repeat(4);
+			} else {
+				document.getElementById("q9a").innerHTML = "false";
+			}
+		}
+		
+		function arrSwap(){			
+			var str = document.getElementById("q10").value;
+			var k;
+			k = str.split("");
+			var firstElement = k.shift();
+			var lastELement = k.pop();
+			k.push(firstElement);
+			k.unshift(lastELement);
+			str = k.join("");
+			document.getElementById("q10a").innerHTML = str;
+		}
+		
+		function revFunc(){			
+			var str = document.getElementById("q11").value;
+			var arrstr = str.split("");
+			var arrrev = arrstr.reverse();
+			document.getElementById("q11a").innerHTML = arrrev.join("");
+		}
+		
+		function sortFunc(){			
+			var str = document.getElementById("q12").value;
+			document.getElementById("q12a").innerHTML = str.split("").sort().join("");
+		}
+		
+		function longWord(){
+			var str = document.getElementById("q13").value;
+			var arrOfWords = str.split(" ");
+			var result = arrOfWords[0];
+			for(var x = 1 ; x < arrOfWords.length ; x++)
+			{
+				if(result.length < arrOfWords[x].length)
+				{
+					result = arrOfWords[x];
+				} 
+			}
+			document.getElementById("q13a").innerHTML  =  result;
+		}
+		
+		function unique() {
+			var str = document.getElementById("q14").value;
+			var newString = ""
+			for (var i = 0; str.length > i; i++) {
+				if (!newString.includes(str.charAt(i))) {
+					 newString += str.charAt(i);
+				}			
+			}
+			document.getElementById("q14a").innerHTML = newString;
+		}
+		
+		function occurrences(){
+			var str = document.getElementById("q15").value;
+			var substr = {};
+			str.replace(/\S/g, function(l){substr[l] = (isNaN(substr[l]) ? 1 : substr[l] + 1);});
+			document.getElementById("q15a").innerHTML = substr;
+		}
+		
+		function randomChar(){	
+			var len = document.getElementById("q16").value;
+			var text = "";
+			var char_list = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+				for(var i=0; i < len; i++ )
+				{  
+					text += char_list.charAt(Math.floor(Math.random() * char_list.length));
+				}
+			document.getElementById("q16a").innerHTML = text;
+		}
+			
+		function subUnrepeat(){
+			var str = document.getElementById("q17").value;			
+			
+			document.getElementById("q17a").innerHTML = "";
+		}
+		
+		function getFormvalue(){
+			var eleOnform = document.getElementById("q18");
+			var result = "";
+			for (var i=0;i<eleOnform.length;i++)
+			{
+				if (eleOnform.elements[i].value!='Submit')
+				{  
+					result += eleOnform.elements[i].value;
+				}  
+			}
+			alert(result);
+			document.getElementById("q18a").innerHTML = result;
+		}
+		
+		function getAttributes(){
+			var anchorTag = document.getElementById("q19");
+			alert('The value of the href attribute of the link is : '+anchorTag.href);
+			alert('The value of the hreflang attribute of the link is : '+anchorTag.hreflang);
+			alert('The value of the rel attribute of the link is : '+anchorTag.rel);
+			alert('The value of the taget attribute of the link is : '+anchorTag.target);
+			alert('The value of the type attribute of the link is : '+anchorTag.type); 
+		}
+		
+		function changeContent(){
+			rn = window.prompt("Input the Row number(0,1,2)", "0");
+			cn = window.prompt("Input the Column number(0,1)","0");
+			content = window.prompt("Input the Cell content");  
+			var x=document.getElementById('myTableq20').rows[parseInt(rn,10)].cells;
+			x[parseInt(cn,10)].innerHTML=content;
+		}
+		
+		function removecolor(){
+			var x=document.getElementById("colorSelectQ21");
+			x.remove(x.selectedIndex);
+		}
+		
+    </script>	
+</body>
+</html>
