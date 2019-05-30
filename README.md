@@ -11,3 +11,6 @@ This Folder includes HTML, CSS, JS, JQuery practise files
 
 # FSE_MICRO.zip
 Fast track FSE Assignments, Incomplete but backing up
+
+# fse-master.zip
+Added Azax Js practise files
